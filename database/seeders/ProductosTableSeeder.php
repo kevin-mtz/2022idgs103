@@ -15,9 +15,6 @@ class ProductosTableSeeder extends Seeder
     public function run()
     {
         [
-        'producto' => 'Coca Cola 600ml'
-        ,'descripcion' => 'Botella pet coca cola 600ml'
-        ,
 
         ]
     }

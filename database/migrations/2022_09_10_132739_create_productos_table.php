@@ -16,13 +16,11 @@ return new class extends Migration
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
             $table->string('producto', 50)->comment('Nombre del Producto');
-            $table->string('Descripcion', 13)->comment('RFC');
-            $table->string('contacto', 150)->comment('Nombre del contacto');
-            $table->string('numero_celular', 10)->comment('Numero de celular');
-            $table->string('url', 500)->comment('URL página web del cliente');
-            $table->enum('regimen_fiscal', ['Persona fisica con actividad empresarial'
-            ,'Sociedad anonima de capital variable'])
-            -> comment('regimen del cliente');
+            $table->tinyText('dscripcion', 13)->comment('Descripcion del Producto');
+            $table->decimal('precio', 10, 2)->comment('Precio del producto');
+            $table->unsignedMediumInteger('Existencias')->comment('Productos existentes');
+            $table->string('fotografia', 50)->comment('Fotografia del producto');
+            $table->decimal('tasa_iva', 10, 2)->comment('');
             $table->timestamps();   
         });
     }
