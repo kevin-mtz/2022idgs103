@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('producto', 50)->comment('Nombre del Producto');
             $table->tinyText('descripcion')->comment('Descripcion del producto');
             $table->decimal('precio', 10, 2)->comment('Precio del Producto');
-            $table->unsignedMediumInteger('existencias', 10)->comment('');
+            $table->unsignedMediumInteger('existencias')->comment('');
             $table->string('fotografia', 50)->comment('Fotografia del producto');
             $table->decimal('tasa_iva', 10, 2)->comment('');
             $table->timestamps();   
