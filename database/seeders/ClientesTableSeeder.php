@@ -67,9 +67,7 @@ class ClientesTableSeeder extends Seeder
              ,'created_at' => '2022-09-10 12:48:00'
              ,'updated_at'  => '2022-09-10 12:48:00'
             ]
-          
+         ]);
 
-        ]);
-
-        }
+     }
 }
